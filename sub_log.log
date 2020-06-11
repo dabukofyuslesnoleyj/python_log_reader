@@ -1,0 +1,16 @@
+INFO,DTable,2020-02-12 09:50:13.004+08:00,@fm_data_table;fm_sv#json {"name":"SV.G.V2K_GlueTime[0]","action":"changed","value":706646.25021336169,"table_name":"sv"}
+WARNING,InlineStage,2020-02-12 09:40:00.838+08:00,Stage 0 Check Complete Reset
+ERROR,DMC40X0Controller,2020-02-12 09:40:00.751+08:00,Lock Workpiece Off Error
+INFO,UserLogger,2020-02-12 09:40:00.133+08:00,@userlog#json {"code":3600,"message":"Run teach start.","ex_info":"run1"}
+INFO,TargetManager,2020-02-12 09:40:00.133+08:00,Set target(user). draw = 2
+INFO,DisplayManager,2020-02-12 09:40:00.133+08:00,Draw targets. draw = 2
+INFO,MapTable,2020-02-12 09:40:00.364+08:00,MapIn: IN:MapCallSub_offset
+INFO,MapTable,2020-02-12 09:40:00.364+08:00,@mapping#json {"action":"start_map_in","func":"IN:MapCallSub_offset","group":"MapCallSub","entries_count":0,"target_count":1}
+INFO,WorkMotion,2020-02-12 09:40:00.368+08:00,Queue Start!
+INFO,DMC40X0Controller,2020-02-12 09:40:00.460+08:00,Motion queue number: 2
+INFO,DMC40X0Controller,2020-02-12 09:40:00.460+08:00,queue execution time: 91 ms
+INFO,WorkMotion,2020-02-12 09:40:00.460+08:00,Queue Done! True
+INFO,McProtocol,2020-02-12 09:40:00.884+08:00,Write PLC bit value success. Address: M10061. Size: 1. Values: 0.
+INFO,ImageWidget,2020-02-11 19:08:38.801+08:00,RestBackgroundImage: 0.119
+INFO,debug,2020-02-11 19:08:57.982+08:00,lazysame => key:pressure:FluidAir:error, value:0.1, svArray:0.1, eq:True
+INFO,DMC40X0Controller,2020-02-11 19:08:58.198+08:00,Speed: 80.0000023586178, in pulse: 400000.7976
