@@ -1,15 +1,16 @@
 import csv
 
+class IWriterListener :
+    def Update(self, input: str):
+        pass
+
 class IWriter :
-    listeners = []
+    def __init__(self):
+        self.listeners = []
     def WriteLog(self):
         pass
     def Attach(self, newListener: IWriterListener):
-        listeners.append(newListener)
+        self.listeners.append(newListener)
     def NotifyAll(self, input: str):
-        for listener in listeners:
+        for listener in self.listeners:
             listener.Update(input)
-
-class IWriterListener :
-    def Update(self, input: string)
-        pass
