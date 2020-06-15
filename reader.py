@@ -1,4 +1,5 @@
 import csv
+import cxlib.anlog
 
 class IReaderListener :
     def Update(self, input):
@@ -7,7 +8,7 @@ class IReaderListener :
 class IReader :
     def __init__(self):
         self.listeners = []
-    def ReadLog(self, logs: list) -> str:
+    def ReadLog(self, logs: list) -> list:
         pass
     def Attach(self, newListener: IReaderListener):
         self.listeners.append(newListener)
@@ -15,3 +16,8 @@ class IReader :
         for listener in self.listeners:
             listener.Update()
             
+class LogReader(IReader) :
+    def ReadLog(self, logs: list) -> list:
+        log_list = []
+        for log in logs:
+            log_list.append(Anlog.parse_log(log))
