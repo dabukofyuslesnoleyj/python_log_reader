@@ -10,7 +10,7 @@ class IReader :
         self.listeners = []
     def ReadLog(self, logs: list) -> list:
         pass
-    def Attach(self, newListener: IReaderListener):
+    def Attach(self, newListener):
         self.listeners.append(newListener)
     def NotifyAll(self, input):
         for listener in self.listeners:

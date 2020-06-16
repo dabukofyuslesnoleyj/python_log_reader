@@ -10,7 +10,7 @@ class IWriter :
         self.listeners = []
     def WriteLog(self):
         pass
-    def Attach(self, newListener: IWriterListener):
+    def Attach(self, newListener):
         self.listeners.append(newListener)
     def NotifyAll(self, input: str):
         for listener in self.listeners:
