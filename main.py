@@ -6,5 +6,9 @@ def main():
     logReader = LogReader()
     logFileReader = LogFileReader()
     jsonLogUpdater = JSONLogUpdater()
+    
+    logReader.Attach(jsonLogUpdater)
+    logs = logReader.ReadLog(logFileReader.ReadFile(filePath))
+    
 
 main()

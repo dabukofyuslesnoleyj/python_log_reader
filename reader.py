@@ -21,6 +21,7 @@ class LogReader(IReader) :
         log_list = []
         for log in logs:
             log_list.append(Anlog.parse_log(log))
+            NotifyAll(log)
 
 class LogFileReader :
     def ReadFile(self, filePath: str) -> list:
