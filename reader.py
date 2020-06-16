@@ -1,5 +1,5 @@
 import csv
-import cxlib.anlog
+from cxlib.anlog import Anlog
 
 class IReaderListener :
     def Update(self, input):
@@ -21,3 +21,9 @@ class LogReader(IReader) :
         log_list = []
         for log in logs:
             log_list.append(Anlog.parse_log(log))
+
+class LogFileReader :
+    def ReadFile(self, filePath: str) -> list:
+        file = open(filePath, "r")
+        
+        return file.readlines()
