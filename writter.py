@@ -18,5 +18,5 @@ class IWriter :
 
 class JSONLogUpdater (IWriterListener):
     def Update(self, input:str):
-       with open('data.txt', 'w') as outfile:
+       with open('output_logs.txt', 'w') as outfile:
            json.dump(input, outfile)

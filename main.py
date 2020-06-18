@@ -10,5 +10,6 @@ def main():
     logReader.Attach(jsonLogUpdater)
     logs = logReader.ReadLog(logFileReader.ReadFile(filePath))
     
+    
 
 main()
